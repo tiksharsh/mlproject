@@ -1,4 +1,11 @@
 pandas
 numpy
 seaborn
+matplotlib
+xgboost
+scikit-learn
+catboost
 -e .
+
+# Comment -e . and execute below command in terminal 
+# pip install -r requirements.txt
