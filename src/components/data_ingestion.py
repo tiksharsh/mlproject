@@ -1,16 +1,18 @@
+# https://pythonhow.com/what/what-to-do-to-import-files-from-different-folder-in-python/#:~:text=To%20import%20a%20file%20from,searches%20for%20modules%20and%20packages.
+
 import os
 import sys
 import pandas as pd
 import numpy as np
 
-import logging
-# import exception
-# from logger import logging
-# from src.exception import CustomException
-
+sys.path.append("src")
+from logger import logging
+from exception import CustomException
 
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
+
+
 
 
 @dataclass
@@ -52,8 +54,8 @@ class DataIngestion:
             raise CustomException(e, sys)
         
 # Below code is created for data_ingestion file testing purpose  
-if __name__ == "__main__":
-    obj = DataIngestion()
-    obj.initiate_data_ingestion()
+# if __name__ == "__main__":
+#     obj = DataIngestion()
+#     obj.initiate_data_ingestion()
         
     
