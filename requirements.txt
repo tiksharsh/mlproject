@@ -5,6 +5,7 @@ matplotlib
 xgboost
 scikit-learn
 catboost
+dill
 -e .
 
 # Comment -e . and execute below command in terminal 

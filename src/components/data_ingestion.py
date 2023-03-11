@@ -9,6 +9,9 @@ sys.path.append("src")
 from logger import logging
 from exception import CustomException
 
+from data_transformation import DataTransformation
+from data_transformation import DataTransformationConfig
+
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
@@ -52,10 +55,13 @@ class DataIngestion:
         except Exception as e:
             logging.info("Indside Data Ingestion exception!!")
             raise CustomException(e, sys)
-        
+      
 # Below code is created for data_ingestion file testing purpose  
-# if __name__ == "__main__":
-#     obj = DataIngestion()
-#     obj.initiate_data_ingestion()
+
+if __name__ == "__main__":
+    obj = DataIngestion()
+    train_data, test_data =  obj.initiate_data_ingestion()
+    data_tranformation = DataTransformation()
+    data_tranformation.initiate_data_transformation(train_data, test_data)
         
     
