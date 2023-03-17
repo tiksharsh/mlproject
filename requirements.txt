@@ -6,7 +6,8 @@ xgboost
 scikit-learn
 catboost
 dill
--e .
+Flask
+# -e .
 
 # Comment -e . and execute below command in terminal 
 # pip install -r requirements.txt

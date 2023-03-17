@@ -120,7 +120,7 @@ class ModelTrainer:
             predicted = best_model.predict(X_test)
 
             r2_square = r2_score(y_test, predicted)
-            print(r2_square)
+            print(f"R2_Square: {r2_square}")
             
             return r2_square
             
