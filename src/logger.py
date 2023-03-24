@@ -15,5 +15,5 @@ logging.basicConfig(
 ) 
 
 # Below code is created for logger file testing purpose  
-# if __name__ == "__main__":
-#     logging.info("Logging has started")
+if __name__ == "__main__":
+    logging.info("Logging has started")
