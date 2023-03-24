@@ -1,5 +1,10 @@
 {
     "python.analysis.extraPaths": [
         "./src/pipeline"
-    ]
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": false
 }
